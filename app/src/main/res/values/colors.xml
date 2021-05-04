@@ -14,6 +14,6 @@
     <color name="color_in_progress_bgr">#FCF299</color>
     <color name="color_done_bgr">#9DBB7B</color>
     <color name="color_todo_title">#F73729</color>
-    <color name="color_in_progress_title">#FFEB3B</color>
+    <color name="color_in_progress_title">#FFC107</color>
     <color name="color_done_title">#5D8331</color>
 </resources>

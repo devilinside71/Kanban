@@ -1,4 +1,4 @@
-package com.hmei.nmrd.kanba
+package com.hmei.nmrd.kanban
 
 import org.junit.Test
 

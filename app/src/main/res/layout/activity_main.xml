@@ -16,15 +16,18 @@
         android:layout_marginTop="8dp"
         android:background="@color/colo_todo_bgr"
         android:orientation="vertical"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textViewTodo"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color_todo_title"
-            android:text="@string/label_todo" />
+            android:paddingStart="5dp"
+            android:text="@string/label_todo"
+            app:drawableEndCompat="@drawable/ic_add" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewTodo"
@@ -33,12 +36,11 @@
 
         <TextView
             android:id="@+id/tvEmptyListTodo"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="#cccccc"
             android:gravity="center"
             android:text="@string/label_list_empty"
-            android:textSize="20sp"
             android:visibility="gone" />
     </LinearLayout>
 
@@ -66,10 +68,12 @@
 
         <TextView
             android:id="@+id/textViewInProgress"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color_in_progress_title"
-            android:text="@string/label_in_progress" />
+            android:paddingStart="5dp"
+            android:text="@string/label_in_progress"
+            app:drawableEndCompat="@drawable/ic_add" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewInProgress"
@@ -78,12 +82,11 @@
 
         <TextView
             android:id="@+id/tvEmptyListInProgress"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="#cccccc"
             android:gravity="center"
             android:text="@string/label_list_empty"
-            android:textSize="20sp"
             android:visibility="gone" />
     </LinearLayout>
 
@@ -110,10 +113,12 @@
 
         <TextView
             android:id="@+id/textViewDone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/color_done_title"
-            android:text="@string/label_done" />
+            android:paddingStart="5dp"
+            android:text="@string/label_done"
+            app:drawableEndCompat="@drawable/ic_add" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewDone"
@@ -124,12 +129,11 @@
 
         <TextView
             android:id="@+id/tvEmptyListDone"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="#cccccc"
             android:gravity="center"
             android:text="@string/label_list_empty"
-            android:textSize="20sp"
             android:visibility="gone" />
     </LinearLayout>
 
