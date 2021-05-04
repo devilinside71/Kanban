@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private var tvEmptyListTodo: TextView? = null
     private var tvEmptyListInProgress: TextView? = null
     private var tvEmptyListDone: TextView? = null
-
+    var fullList = arrayOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         setEmptyListTodo(true)
         setEmptyListInProgress(true)
         setEmptyListDone(true)
+        setDummyList()
     }
 
     private fun setEmptyListTodo(visibility: Boolean) {
@@ -48,4 +49,14 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun setDummyList(){
+        fullList=append(fullList,"Todo1,TODO")
+        fullList=append(fullList,"Prog1,PROGRESS")
+    }
+
+    fun append(arr: Array<String>, element: String): Array<String> {
+        val list: MutableList<String> = arr.toMutableList()
+        list.add(element)
+        return list.toTypedArray()
+    }
 }
